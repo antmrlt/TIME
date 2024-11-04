@@ -40,7 +40,7 @@ This web application is built using a sophisticated combination of modern web te
 
 Accessing **TIME** is effortless and requires no installation. Experience the seamless, real-time display of the current timestamp by simply following this link:
 
-👉 [**View TIME**](https://antmrlt.github.io/TIME) 
+👉 [**View TIME**](https://antmrlt.github.io/Timestamp) 
 
 No setup, no hassle—just instant access to the current moment.
 
