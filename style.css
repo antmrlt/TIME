@@ -1,12 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", serif;
+    display: flex;
+    height: 100vh;
+    background-color: #E4E4E4;
+}
+
+.time-container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 90dvh;
-    font-family: "Inter", serif;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+button {
+    position: absolute;
+    left: 0;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* MENU */
+
+.menu {
+    overflow: hidden;
+    width: 0;
+    transition: width 0.3s ease;
+    padding-top: 40px;
+}
+
+.menu h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.selecter {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.selecter p {
+    min-width: 200px;
+}
+
+.selected {
+    background-color: white;
+}
+
+.unselected:hover {
+    background-color: #DEDEDE;
+    cursor: pointer;
+}
+
+.options {
+    padding: 0 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 p {

@@ -8,8 +8,37 @@
     <link rel="shortcut icon" href="TIME.ico" type="image/x-icon">
 </head>
 <body>
-    <p>current time</p>
-    <div id="time"></div>
+    <div class="menu">
+        <h3>TIME</h3>
+        <div class="selecter">
+            <div class="selected options" onclick="startTimestamp('unix', this)">
+                <p>Unix Timestamp</p>
+            </div>
+            <div class="unselected options" onclick="startTimestamp('iso', this)">
+                <p>ISO</p>
+            </div>
+            <div class="unselected options" onclick="startTimestamp('us', this)">
+                <p>US</p>
+            </div>
+            <div class="unselected options" onclick="startTimestamp('european', this)">
+                <p>European</p>
+            </div>
+            <div class="unselected options" onclick="startTimestamp('rfc1123', this)">
+                <p>RFC 1123</p>
+            </div>
+            <div class="unselected options" onclick="startTimestamp('military', this)">
+                <p>Military Time</p>
+            </div>
+        </div>
+    </div>
+    <div class="time-container" style="width: 100%;">
+        <button onclick="menu();chevron()">
+            <img src="chevron_right.svg" alt="" id="chevron-right">
+            <img src="chevron_left.svg" alt="" id="chevron-left" style="display: none;">
+        </button>
+        <p>current time</p>
+        <div id="time"></div>
+    </div>
     <script src="time.js"></script>
 </body>
 </html>
