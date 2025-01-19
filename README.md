@@ -14,6 +14,7 @@ Welcome to **TIME**! This cutting-edge, meticulously engineered application prov
   - [Interaction:](#interaction)
 - [Troubleshooting ](#troubleshooting-)
 - [FAQs ](#faqs-)
+- [Supported Time Formats ](#supported-time-formats-)
 - [License ](#license-)
 
 ## Features <a name="features"></a>
@@ -59,6 +60,19 @@ No setup, no hassle—just instant access to the current moment.
 
 **How much time did it take to create this application?**  
 Creating this application took a considerable amount of time, involving meticulous engineering and thoughtful design. Every aspect, from the precision of the timestamp display to the simplicity of the user interface, was crafted with care to ensure an exceptional user experience.
+
+## Supported Time Formats <a name="supported-time-formats"></a>
+
+**TIME** supports the following time formats:
+
+- **UNIX Time**
+- **US Time (12-hour format)**
+- **European Time (24-hour format)**  
+- **ISO 8601**
+- **RFC 1123**  
+- **Military Time (24-hour format)**
+
+Each of these formats ensures compatibility with different regional and international standards, making **TIME** adaptable to diverse use cases and user preferences.
 
 ## License <a name="license"></a>
 
