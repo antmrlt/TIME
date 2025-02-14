@@ -73,3 +73,18 @@ function chevron() {
         chevronLeft.style.display = 'none';
     }
 }
+
+function copyTime() {
+    const timeText = document.getElementById('time').innerText;
+    const copyIcon = document.getElementById('copyIcon');
+
+    navigator.clipboard.writeText(timeText).then(() => {
+        copyIcon.src = "check.svg"; // Change to checkmark icon
+        
+        setTimeout(() => {
+            copyIcon.src = "copy.svg"; // Revert back after 3 seconds
+        }, 3000);
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+}

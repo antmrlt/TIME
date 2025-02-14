@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TIME</title>
+    <title>Time</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="TIME.ico" type="image/x-icon">
 </head>
@@ -30,13 +30,19 @@
                 <p>Military Time</p>
             </div>
         </div>
+        <div class="bigup">
+            <a href="https://github.com/antmrlt/time">checkout my github</a>
+        </div>
     </div>
     <div class="time-container" style="width: 100%;">
         <button onclick="menu();chevron()">
             <img src="chevron_right.svg" alt="" id="chevron-right">
             <img src="chevron_left.svg" alt="" id="chevron-left" style="display: none;">
         </button>
-        <p>current time</p>
+        <div class="copycurrent">
+            <p>current time</p>
+            <img id="copyIcon" style="cursor: pointer;" onclick="copyTime()" src="copy.svg" width="15px">
+        </div>
         <div id="time"></div>
     </div>
     <script src="time.js"></script>

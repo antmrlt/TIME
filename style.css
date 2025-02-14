@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tiny5&display=swap');
 
 body {
     padding: 0;
@@ -15,8 +15,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
     background-color: white;
     transition: width 0.3s ease;
 }
@@ -29,10 +27,16 @@ button {
     cursor: pointer;
 }
 
+.copycurrent {
+    display: flex;
+    gap: 5px;
+}
+
 /* MENU */
 
 .menu {
     overflow: hidden;
+    position: relative;
     width: 0;
     transition: width 0.3s ease;
     padding-top: 40px;
@@ -40,7 +44,9 @@ button {
 
 .menu h3 {
     text-align: center;
-    font-size: 20px;
+    font-family: "Tiny5", serif;
+    font-size: 40px;
+    margin: 20px 0;
 }
 
 .selecter {
@@ -75,4 +81,26 @@ p {
 
 #time {
     font-size: 30px;
+}
+
+/* BIGUP */
+
+.bigup {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bigup a {
+    color: rgb(150, 150, 150);
+    font-size: 12px;
+    text-decoration: none;
+    min-width: 102px;
+}
+
+
+.bigup a:hover {
+    text-decoration: underline;
 }
