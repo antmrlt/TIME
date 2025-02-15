@@ -35,7 +35,11 @@
         </div>
     </div>
     <div class="time-container" style="width: 100%;">
-        <button onclick="menu();chevron()">
+        <div class="news">
+            <p>Now live: Full color customization to suit your unique taste!</p>
+            <img src="chevron_left.svg" alt="" onclick="hideNews()" style="cursor: pointer;">
+        </div>
+        <button onclick="menu();chevron()" id="chevron">
             <img src="chevron_right.svg" alt="" id="chevron-right">
             <img src="chevron_left.svg" alt="" id="chevron-left" style="display: none;">
         </button>
@@ -44,6 +48,15 @@
             <img id="copyIcon" style="cursor: pointer;" onclick="copyTime()" src="copy.svg" width="15px">
         </div>
         <div id="time"></div>
+        <div onclick="toggleCSSChanger()" id="chevron" class="chevron-csschanger">
+            <img src="chevron_right.svg" alt="" id="chevron-haut">
+            <img src="chevron_left.svg" alt="" id="chevron-bas" style="display: none;">
+        </div>
+        <div class="csschanger">
+            <p>background-color: #<input type="text" id="bgColorInput" placeholder="ffffff">;</p>
+            <p>text-color: #<input type="text" id="textColorInput" placeholder="000000">;</p>
+            <p>menu-color: #<input type="text" id="menuColorInput" placeholder="e4e4e4">;</p>
+        </div>
     </div>
     <script src="time.js"></script>
 </body>

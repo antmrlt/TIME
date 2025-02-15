@@ -25,6 +25,7 @@ Welcome to **TIME**! This cutting-edge, meticulously engineered application prov
 - **Minimalist Interface**: Sleek, distraction-free UI for a focused user experience.
 - **Scalable Architecture**: Can handle an unexpected surge of users without latency.
 - **Cross-Browser Compatibility**: Tested and verified across major web browsers.
+- **Style personalization**: You can now personalize the colors as you want !
 
 ## Architecture Overview <a name="architecture-overview"></a>
 

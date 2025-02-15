@@ -17,6 +17,7 @@ body {
     flex-direction: column;
     background-color: white;
     transition: width 0.3s ease;
+    overflow: hidden;
 }
 
 button {
@@ -26,6 +27,8 @@ button {
     border: none;
     cursor: pointer;
 }
+
+/* COPYBUTTON */
 
 .copycurrent {
     display: flex;
@@ -40,6 +43,8 @@ button {
     width: 0;
     transition: width 0.3s ease;
     padding-top: 40px;
+
+    background-color: #F9F9F9;
 }
 
 .menu h3 {
@@ -62,6 +67,7 @@ button {
 
 .selected {
     background-color: white;
+    outline: solid 1px #D4D4D4;
 }
 
 .unselected:hover {
@@ -103,4 +109,77 @@ p {
 
 .bigup a:hover {
     text-decoration: underline;
+}
+
+/* CSSCHANGER */
+
+.csschanger {
+    position: absolute;
+    bottom: -100px; /* Start hidden below the view */
+    background-color: #F9F9F9;
+    border: solid 1px #D4D4D4;
+    border-radius: 5px;
+    font-family: Consolas, monospace;
+    padding: 10px;
+    transition: bottom 0.3s ease;
+    color: black;
+}
+
+.csschanger.show {
+    bottom: 10px; /* Slide up into view */
+}
+
+.csschanger p {
+    margin: 0;
+}
+
+.csschanger input {
+    width: 45px;
+    border: none;
+    background-color: #F9F9F9;
+    font-family: Consolas, monospace;
+}
+
+.csschanger input:focus {
+    outline: none;
+}
+
+.chevron-csschanger {
+    position: absolute;
+    bottom: 10px;
+    transition: bottom 0.3s ease;
+    cursor: pointer;
+}
+
+#chevron-bas {
+    transform: rotate(-90deg);
+}
+
+#chevron-haut {
+    transform: rotate(-90deg);
+}
+
+/* NEWS */
+
+.news {
+    position: absolute;
+    top: 10px; /* Start hidden below the view */
+
+    display: flex;
+    gap: 10px;
+
+    transition: top 0.3s ease;
+    color: black;
+}
+
+.news p {
+    background-color: #F9F9F9;
+    border: solid 1px #D4D4D4;
+    border-radius: 5px;
+    font-family: Consolas, monospace;
+    padding: 10px;
+}
+
+.news img {
+    transform: rotate(90deg);
 }
